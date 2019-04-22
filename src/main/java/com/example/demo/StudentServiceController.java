@@ -39,7 +39,7 @@ public class StudentServiceController {
  
     @RequestMapping(value = "/getStudentDetailsForSchool/{schoolname}", method = RequestMethod.GET)
     public List<Student> getStudents(@PathVariable String schoolname) {
-        System.out.println("Getting Student details for " + schoolname);
+        System.out.println("Getting Student details for Sowmi " + schoolname);
  
         List<Student> studentList = schooDB.get(schoolname);
         if (studentList == null) {
